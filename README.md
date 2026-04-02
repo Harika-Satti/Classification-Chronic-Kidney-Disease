@@ -14,27 +14,25 @@
   <img src="https://img.shields.io/badge/Render-46E3B7?style=for-the-badge&logo=render&logoColor=black"/>
 </p>
 
----
 
 ## 🧠 About the Project
 
-This is an AI-powered web application that predicts Chronic Kidney Disease (CKD) using machine learning.  
-It uses a trained Random Forest model and provides instant predictions through a Flask-based dashboard.
+An AI-powered web application that predicts Chronic Kidney Disease (CKD) using machine learning.  
+It uses a trained Random Forest model and provides instant predictions through a Flask-based dashboard and Deployed in Render
 
----
 
 ## 📸 Screenshots
 
 ### Dashboard
-![Dashboard](screenshots/dashboard.png)
+![Dashboard](dashboard.png)
 
 ### Prediction Result
-![Result](screenshots/result.png)
+![Result](result1.png)
 
-### Risk Analysis
-![Analysis](screenshots/analysis.png)
+![Result](result2.png)
 
----
+### Live Deployment
+![Analysis](live.png)
 
 ## 🎯 Features
 
@@ -45,7 +43,6 @@ It uses a trained Random Forest model and provides instant predictions through a
 - Flask backend integration
 - Render deployment ready
 
----
 
 ## 🧪 Input Features
 
@@ -59,7 +56,47 @@ It uses a trained Random Forest model and provides instant predictions through a
 - Serum Creatinine
 - Hemoglobin
 
----
+## 📊 Sample Prediction Output
+
+### 🧾 Input Values
+| Feature              | Value |
+|---------------------|------|
+| Age                 | 58   |
+| Blood Pressure      | 90   |
+| Specific Gravity    | 1.010|
+| Albumin             | 3    |
+| Sugar               | 2    |
+| Blood Glucose       | 180  |
+| Blood Urea          | 60   |
+| Serum Creatinine    | 2.5  |
+| Hemoglobin          | 9.5  |
+
+### 🧠 Prediction Result
+
+- **CKD Probability:** 87%
+- **Healthy Probability:** 13%
+- **Prediction:** ⚠️ Chronic Kidney Disease Detected
+- **Risk Level:** High Risk
+
+### ⚠️ Abnormal Indicators
+
+- Elevated Blood Glucose
+- High Blood Urea
+- High Serum Creatinine
+- Low Hemoglobin
+- Presence of Albumin and Sugar
+
+## 📊 Sample Healthy Output
+
+- **CKD Probability:** 5%
+- **Healthy Probability:** 95%
+- **Prediction:** ✅ No Chronic Kidney Disease
+- **Risk Level:** Low Risk
+
+### ✅ Interpretation
+
+The model predicts a **high likelihood of Chronic Kidney Disease** based on abnormal biomarker values.  
+Immediate medical consultation is strongly recommended.
 
 ## 🧠 Model Details
 
@@ -68,15 +105,12 @@ It uses a trained Random Forest model and provides instant predictions through a
 - Dataset: CKD Dataset (UCI / Kaggle)
 - Output: CKD / Not CKD
 
----
-
 ## 📊 Accuracy
 
 <p align="center">
   <img src="https://img.shields.io/badge/Model%20Accuracy-98%25-brightgreen?style=for-the-badge"/>
 </p>
 
----
 
 ## 🏗️ Project Structure
 
@@ -89,21 +123,19 @@ CKD-Project/
 ├── static/
 │   ├── css/
 │   ├── js/
-├── screenshots/
+├── screenshots
 │   ├── dashboard.png
 │   ├── result.png
 │   └── analysis.png
 
----
 
 ## ⚙️ Run Locally
 
-git clone https://github.com/your-username/ckd-project.git
-cd ckd-project
+git clone https://github.com/Harika-Satti/Classification-Chronic-Kidney-Disease.git
+cd Classification-Chronic-Kidney-Disease
 pip install -r requirements.txt
 python app.py
 
----
 
 ## 🚀 Deploy on Render
 
@@ -113,30 +145,22 @@ pip install -r requirements.txt
 Start Command:
 gunicorn app:app
 
----
-
 ## 🌐 Live Demo
 
-https://your-app-name.onrender.com
-
----
+https://classification-chronic-kidney-disease.onrender.com
 
 ## ⚠️ Disclaimer
 
 This project is for educational purposes only and not for real medical diagnosis.
 
----
 
 ## 👩‍💻 Author
 
 Harika Satti  
 Aspiring Data Scientist  
-Machine Learning | AI | Flask Developer  
-
----
+Machine Learning | AI | Flask 
 
 ## ⭐ Support
 
 ⭐ Star this repository  
-🍴 Fork it  
-🚀 Share it
+
